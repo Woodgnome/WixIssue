@@ -1,0 +1,5 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<Directory Id="APPLICATIONFOLDER" Name="Placeholder"/>
+	</Fragment>
+</Wix>
