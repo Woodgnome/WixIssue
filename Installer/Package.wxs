@@ -1,14 +1,14 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
-  <Package Name="Installer" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="451c63af-3108-46aa-a378-b21748155a9a" Scope="perMachine">
-    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
-    <MediaTemplate EmbedCab="yes"/>
+	<Package Name="Installer" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="451c63af-3108-46aa-a378-b21748155a9a" Scope="perMachine">
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+		<MediaTemplate EmbedCab="yes"/>
 
-    <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
-    </Feature>
+		<Feature Id="Main">
+			<ComponentGroupRef Id="ExampleComponents" />
+		</Feature>
 
-	<Property Id="ApplicationFolderName" Value="TestApp" />
-	<Property Id="WixAppFolder" Value="WixPerMachineFolder" />
-    <ui:WixUI Id="WixUI_Advanced" />
-  </Package>
+		<Property Id="ApplicationFolderName" Value="TestApp" />
+		<Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+		<ui:WixUI Id="WixUI_Advanced" />
+	</Package>
 </Wix>
